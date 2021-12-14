@@ -1,0 +1,20 @@
+stages:
+  - linters
+
+variables:
+  NODE_PATH: src
+  CI: 'true'
+
+cache:
+  key: 'hyena-admin-web'
+  paths:
+    - /builds/hyena/admin-web/node_modules
+
+eslint:
+  stage: linters
+  image: node:dubnium-alpine
+  before_script:
+    - yarn install --checkfiles
+  script:
+    - yarn lint
+

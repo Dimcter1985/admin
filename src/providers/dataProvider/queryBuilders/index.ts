@@ -1,0 +1,7 @@
+export { default as makeBatchDeletionQuery } from './makeBatchDeletionQuery'
+export { default as makeBatchUpdationQuery } from './makeBatchUpdationQuery'
+export { default as makeCreationQuery } from './makeCreationQuery'
+export { default as makeDeletionQuery } from './makeDeletionQuery'
+export { default as makeGetListQuery } from './makeGetListQuery'
+export { default as makeGetOneQuery } from './makeGetOneQuery'
+export { default as makeUpdationQuery } from './makeUpdationQuery'
